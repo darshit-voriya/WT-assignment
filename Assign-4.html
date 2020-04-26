@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Form With JavaScript</title>
+</head>
+<body bgcolor="Skyblue">
+<form action="#" autocomplete="on" novalidate >
+<center>
+	<fieldset>
+		<legend>GIVE Bio DATA</legend>
+	 <input  type="text" name="Fname" placeholder="First Name" >
+	 <input  type="text" name="Mname" placeholder="Middle Name">
+	<input  type="text" name="Lname" placeholder="Last Name"></br>
+	Gender : 	<input type="radio" id="male" name="gender" value="male">
+			 <label for="male">Male</label>
+  			<input type="radio" id="female" name="gender" value="female">
+  			<label for="female">Female</label>
+  			<input type="radio" id="other" name="gender" value="other">
+  			<label for="other">Other</label><br>
+	telephone : <input type="url" name="" ID="TELE"><br>
+	
+        <input type="button" name="Fill the Form" value="Click here to complete." onblur="vlidate()"></input>
+	</fieldset>
+	<script>
+	function vlidate() {
+        var Y = document.getElementById('TELE').value;
+        if(Y > 10)
+          {
+	     alert('Please enter Valid Telephone number');
+	     $('#TELE').focus(); 
+          }
+        }
+	</script>
+</form>
+</center>
+</body>
+</html>
